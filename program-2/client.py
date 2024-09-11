@@ -1,5 +1,6 @@
 from product import Product
 
+
 class Client:
     def __init__(self, name: str, id: int, balance: float):
         self.name = name

@@ -1,6 +1,7 @@
 from product import Product
 from client import Client
 
+
 class Store:
     def __init__(self):
         self.products = []
