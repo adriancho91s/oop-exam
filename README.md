@@ -42,8 +42,4 @@ Desarrollamos un programa que recibe un número entero de 4 cifras y determina s
 
 Implementamos el algoritmo de cifrado y descifrado César. Este método de cifrado básico desplaza cada letra del mensaje un número fijo de posiciones en el alfabeto. También desarrollamos la lógica para descifrar los mensajes desplazando las letras en sentido opuesto.
 
-### Conclusión
-
-Cada uno de los puntos fue desarrollado con el propósito de aplicar conceptos fundamentales de la Programación Orientada a Objetos, como el uso de clases, objetos, métodos y manejo de archivos. El proyecto demuestra cómo se pueden combinar estas técnicas para resolver problemas prácticos de gestión y manipulación de datos.
-
 ---
