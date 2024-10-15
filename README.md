@@ -1,45 +1,120 @@
-# Parcial I - Programación Orientada a Objetos
+# Sixth Workshop for Programming IV
 
-## Asignatura: Programación Orientada a Objetos
+## Overview
 
-### Tema: Clases, Objetos, Constructores, Estructura de Datos y Archivos
+This project is part of the sixth workshop for the Programming IV course. It includes multiple programs demonstrating various concepts in Python, including a music player application, a login interface, and a shape area calculator. The project follows Object-Oriented Programming (OOP) principles and adheres to the SOLID design principles.
 
-## Team:
-- Johan Boshell Longas
-- Adrián Fernando Gaitán Londoño
+## Features
 
----
+### Program 1: Shape Area Calculator
+- Calculate the area of different shapes: Square, Rectangle, Triangle, and Circle.
+- User interface through the command line.
 
-## Resolución del Parcial
+### Program 2: Person Management
+- Create and manage `Worker` and `Student` objects.
+- User interface through the command line.
 
-### 1. Sistema de Gestión de Empleados
+### Program 3: Login Interface
+- Simple login interface using Tkinter.
+- Authentication with hardcoded credentials.
 
-Hemos desarrollado una aplicación de gestión de empleados que permite realizar operaciones básicas como agregar, eliminar, buscar y mostrar empleados, así como calcular sus salarios en base a su experiencia.
+### Program 4: Music Player
+- Play, pause, resume, and stop music files.
+- Display cover images for MP3 and FLAC files.
+- User interface built with Gradio.
+- Supports MP3, FLAC, WAV, and MP4 file formats.
 
-#### Clases Implementadas:
+## Installation
 
-- **Clase Empleado**: Gestiona la información de un empleado, incluidos sus atributos como nombre, ID, salario base y años de experiencia. Contiene un método para calcular el salario total con bonificaciones basadas en los años de experiencia.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/adriancho91s/sixth-workshop-programming-IV.git
+    cd sixth-workshop-programming-IV
+    ```
 
-- **Clase GestorEmpleados**: Permite administrar una lista de empleados. Proporciona métodos para agregar, eliminar, buscar, editar, y mostrar empleados, así como para guardar y cargar datos de un archivo. Incluye un menú interactivo para facilitar la gestión.
+2. Create a virtual environment and activate it:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-### 2. Sistema de Ventas de Productos con Inventario
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Implementamos un sistema de ventas que gestiona tanto productos como clientes, controlando el inventario y las ventas realizadas.
+## Usage
 
-#### Clases Implementadas:
+### Program 1: Shape Area Calculator
 
-- **Clase Producto**: Representa un producto con atributos como nombre, ID, precio y cantidad en inventario. Ofrece métodos para gestionar el inventario y mostrar información del producto.
+1. Navigate to the `program-1` directory:
+    ```sh
+    cd program-1
+    ```
 
-- **Clase Cliente**: Representa un cliente con atributos como nombre, ID y saldo. Permite realizar compras y mostrar información del cliente.
+2. Run the shape area calculator:
+    ```sh
+    python main.py
+    ```
 
-- **Clase Tienda**: Gestiona la lista de productos y clientes, permitiendo realizar ventas, agregar productos y clientes, y mostrar la información de todos los productos y clientes. También incluye funcionalidades para guardar y cargar datos en un archivo.
+### Program 2: Person Management
 
-### 3. Número Entero de 4 Cifras
+1. Navigate to the `program-2` directory:
+    ```sh
+    cd program-2
+    ```
 
-Desarrollamos un programa que recibe un número entero de 4 cifras y determina si el primer dígito es múltiplo del cuarto. También calcula la suma del segundo y tercer dígito. Este ejercicio se resuelve usando operaciones aritméticas simples para descomponer el número de 4 cifras.
+2. Run the person management application:
+    ```sh
+    python main.py
+    ```
 
-### 4. Algoritmo de Cifrado y Descifrado César
+### Program 3: Login Interface
 
-Implementamos el algoritmo de cifrado y descifrado César. Este método de cifrado básico desplaza cada letra del mensaje un número fijo de posiciones en el alfabeto. También desarrollamos la lógica para descifrar los mensajes desplazando las letras en sentido opuesto.
+1. Navigate to the `program-3` directory:
+    ```sh
+    cd program-3
+    ```
 
----
+2. Run the login interface application:
+    ```sh
+    python main.py
+    ```
+
+### Program 4: Music Player
+
+1. Navigate to the `program-4` directory:
+    ```sh
+    cd program-4
+    ```
+
+2. Run the music player application:
+    ```sh
+    python main.py
+    ```
+
+## Project Structure
+
+- `program-1/`: Contains the shape area calculator application.
+  - `main.py`: Main script for the shape area calculator.
+- `program-2/`: Contains the person management application.
+  - `main.py`: Main script for the person management.
+  - `person.py`: Contains the `Person`, `Worker`, and `Student` classes.
+- `program-3/`: Contains the login interface application.
+  - `main.py`: Main script for the login interface.
+- `program-4/`: Contains the music player application.
+  - `main.py`: Main script for the music player.
+  - `play.png`, `pause.png`, `resume.png`, `stop.png`: Icon files for the buttons.
+- `README.md`: Project documentation.
+
+## Dependencies
+
+- Python 3.12.2
+- Pygame 2.6.1
+- Gradio
+- Mutagen
+- Tkinter (comes with Python)
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
